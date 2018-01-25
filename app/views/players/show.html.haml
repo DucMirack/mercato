@@ -1,0 +1,18 @@
+%p#notice= notice
+
+%p
+  %b Name:
+  = @player.name
+%p
+  %b Min price:
+  = @player.min_price
+%p
+  %b Position:
+  = @player.position
+%p
+  %b User:
+  = @player.user
+
+= link_to 'Edit', edit_player_path(@player)
+\|
+= link_to 'Back', players_path

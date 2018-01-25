@@ -1,0 +1,33 @@
+%p#notice= notice
+
+%p
+  %b Mail:
+  = @user.mail
+%p
+  %b Password:
+  = @user.password
+%p
+  %b Last name:
+  = @user.last_name
+%p
+  %b First name:
+  = @user.first_name
+%p
+  %b Pseudo:
+  = @user.pseudo
+%p
+  %b Nb round:
+  = @user.nb_round
+%p
+  %b Is round closed:
+  = @user.is_round_closed
+%p
+  %b Is mercato closed:
+  = @user.is_mercato_closed
+%p
+  %b Money:
+  = @user.money
+
+= link_to 'Edit', edit_user_path(@user)
+\|
+= link_to 'Back', users_path

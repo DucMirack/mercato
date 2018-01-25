@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  min_price: 1
+  position: MyString
+  user: one
+
+two:
+  name: MyString
+  min_price: 1
+  position: MyString
+  user: two

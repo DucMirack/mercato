@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  mail: MyString
+  password: MyString
+  last_name: MyString
+  first_name: MyString
+  pseudo: MyString
+  nb_round: 1
+  is_round_closed: false
+  is_mercato_closed: false
+  money: 1
+
+two:
+  mail: MyString
+  password: MyString
+  last_name: MyString
+  first_name: MyString
+  pseudo: MyString
+  nb_round: 1
+  is_round_closed: false
+  is_mercato_closed: false
+  money: 1

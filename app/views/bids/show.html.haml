@@ -1,0 +1,21 @@
+%p#notice= notice
+
+%p
+  %b Price:
+  = @bid.price
+%p
+  %b Is win:
+  = @bid.is_win
+%p
+  %b Nb round:
+  = @bid.nb_round
+%p
+  %b User:
+  = @bid.user
+%p
+  %b Player:
+  = @bid.player
+
+= link_to 'Edit', edit_bid_path(@bid)
+\|
+= link_to 'Back', bids_path

@@ -1,0 +1,37 @@
+%h1 Listing users
+
+%table
+  %thead
+    %tr
+      %th Mail
+      %th Password
+      %th Last name
+      %th First name
+      %th Pseudo
+      %th Nb round
+      %th Is round closed
+      %th Is mercato closed
+      %th Money
+      %th
+      %th
+      %th
+
+  %tbody
+    - @users.each do |user|
+      %tr
+        %td= user.mail
+        %td= user.password
+        %td= user.last_name
+        %td= user.first_name
+        %td= user.pseudo
+        %td= user.nb_round
+        %td= user.is_round_closed
+        %td= user.is_mercato_closed
+        %td= user.money
+        %td= link_to 'Show', user
+        %td= link_to 'Edit', edit_user_path(user)
+        %td= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' }
+
+%br
+
+= link_to 'New User', new_user_path
